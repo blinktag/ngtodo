@@ -1,0 +1,10 @@
+<mat-card>
+    <mat-card-title>New To-Do</mat-card-title>
+    <mat-card-content>
+
+    <mat-form-field>
+      <input type="text" [(ngModel)]="todoText" value={{todoText}} placeholder="Enter item name">
+    </mat-form-field>
+  <button class="btn btn-primary" (click)="addTodo()">Add To List</button>
+  </mat-card-content>
+</mat-card>

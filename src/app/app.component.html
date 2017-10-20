@@ -1,0 +1,19 @@
+<div class="App container mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">   
+    <div class="todo-wrapper">
+        <mat-card>
+            <mat-card-title>To-Dos</mat-card-title>
+            <mat-card-content>
+                <mat-list>
+                    <div *ngFor="let todo of todoService.getTodos()">
+                        <mat-list-item> 
+                            <app-todo-item [todo]="todo"></app-todo-item>
+                        </mat-list-item>
+                    </div>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+        <br />
+        <app-todo-input></app-todo-input>
+    </div>
+</div>
+
